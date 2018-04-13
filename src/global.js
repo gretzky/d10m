@@ -7,7 +7,7 @@
  */
 import { injectGlobal } from 'styled-components'
 
-const global = injectGlobal`
+injectGlobal`
   ::selection {
     text-shadow: none;
   }
@@ -20,9 +20,7 @@ const global = injectGlobal`
 
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   html,
@@ -109,8 +107,6 @@ const global = injectGlobal`
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
   }
 
@@ -320,5 +316,3 @@ const global = injectGlobal`
     cursor: default;
   }
 `
-
-export default global

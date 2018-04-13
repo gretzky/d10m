@@ -11,7 +11,7 @@ import {
   order
 } from 'styled-system'
 import tag from 'clean-tag'
-import theme from '../theme'
+import theme from '../theme/theme'
 
 const Box = styled(tag)([],
   { boxSizing: 'border-box' },

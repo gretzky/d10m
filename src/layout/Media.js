@@ -9,7 +9,7 @@ import json2mq from 'json2mq'
 class Media extends Component {
   static propTypes = {
     defaultMatches: PropTypes.bool,
-    query: propTypes.oneOfType([
+    query: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.object,
       PropTypes.arrayOf(PropTypes.object.isRequired)

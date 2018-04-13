@@ -11,7 +11,7 @@ var _styledSystem = require("styled-system");
 
 var _cleanTag = _interopRequireDefault(require("clean-tag"));
 
-var _theme = _interopRequireDefault(require("../theme"));
+var _theme = _interopRequireDefault(require("../theme/theme"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

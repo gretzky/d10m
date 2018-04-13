@@ -3,12 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "global", {
-  enumerable: true,
-  get: function get() {
-    return _global.default;
-  }
-});
 Object.defineProperty(exports, "Media", {
   enumerable: true,
   get: function get() {
@@ -45,16 +39,26 @@ Object.defineProperty(exports, "theme", {
     return _theme.default;
   }
 });
+Object.defineProperty(exports, "colors", {
+  enumerable: true,
+  get: function get() {
+    return _colors.default;
+  }
+});
 Object.defineProperty(exports, "Text", {
   enumerable: true,
   get: function get() {
     return _Text.default;
   }
 });
+Object.defineProperty(exports, "Heading", {
+  enumerable: true,
+  get: function get() {
+    return _Heading.default;
+  }
+});
 
-var _global = _interopRequireDefault(require("./global"));
-
-var _Media = _interopRequireDefault(require("./Media"));
+var _Media = _interopRequireDefault(require("./layout/Media"));
 
 var _Flex = _interopRequireDefault(require("./layout/Flex"));
 
@@ -66,6 +70,10 @@ var _ThemeProvider = _interopRequireDefault(require("./theme/ThemeProvider"));
 
 var _theme = _interopRequireDefault(require("./theme/theme"));
 
+var _colors = _interopRequireDefault(require("./theme/colors"));
+
 var _Text = _interopRequireDefault(require("./typography/Text"));
+
+var _Heading = _interopRequireDefault(require("./typography/Heading"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
