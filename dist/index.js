@@ -3,12 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "global", {
-  enumerable: true,
-  get: function get() {
-    return _global.default;
-  }
-});
 Object.defineProperty(exports, "Media", {
   enumerable: true,
   get: function get() {
@@ -57,8 +51,6 @@ Object.defineProperty(exports, "Heading", {
     return _Heading.default;
   }
 });
-
-var _global = _interopRequireDefault(require("./global"));
 
 var _Media = _interopRequireDefault(require("./layout/Media"));
 

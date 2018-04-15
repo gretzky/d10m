@@ -1,6 +1,6 @@
 {
   "name": "d10m",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "license": "MIT",
   "author": "Sara Federico <sfed617@gmail.com>",
   "repository": "https://github.com/gretzky/d10m",
@@ -20,7 +20,8 @@
     "json2mq": "^0.2.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
-    "styled-components": "^3.2.5"
+    "styled-components": "^3.2.5",
+    "styled-system": "^2.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.44",

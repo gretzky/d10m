@@ -11,13 +11,15 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _styledComponents = require("styled-components");
 
-var _theme = _interopRequireDefault(require("./theme"));
+require("./global");
+
+var _defaultTheme = _interopRequireDefault(require("./defaultTheme"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ThemeProvider = function ThemeProvider(props) {
   return _react.default.createElement(_styledComponents.ThemeProvider, {
-    theme: _theme.default
+    theme: _defaultTheme.default
   }, props.children);
 };
 

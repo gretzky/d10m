@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components'
 
 import './global'
-import theme from './theme'
+import theme from './defaultTheme'
 
 const ThemeProvider = props => (
   <StyledThemeProvider theme={theme}>{props.children}</StyledThemeProvider>
