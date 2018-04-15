@@ -4,6 +4,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = exports.breakpoints = exports.fontWeights = exports.bold = exports.regular = exports.fontSizes = exports.fonts = exports.space = void 0;
+var black = '#000';
+var white = '#fff';
+var lightGray = '#ddd';
+var darkGray = '#bbb';
+var colors = {
+  black: black,
+  white: white,
+  lightGray: lightGray,
+  darkGray: darkGray
+};
 var space = [0, 4, 8, 16, 32, 64, 128];
 exports.space = space;
 var fonts = {
@@ -25,6 +35,7 @@ exports.fontWeights = fontWeights;
 var breakpoints = [32, 40, 48, 64];
 exports.breakpoints = breakpoints;
 var theme = {
+  colors: colors,
   space: space,
   fonts: fonts,
   fontSizes: fontSizes,
