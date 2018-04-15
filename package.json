@@ -6,7 +6,7 @@
   "repository": "https://github.com/gretzky/d10m",
   "main": "dist/index.js",
   "files": [
-    "dist/global.js"
+    "dist/**"
   ],
   "scripts": {
     "compile": "babel src -d dist --ignore __tests__",

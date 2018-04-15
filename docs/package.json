@@ -7,7 +7,7 @@
     "start": "NODE_ENV=development webpack-dev-server --config ./webpack/webpack.config.dev.js"
   },
   "dependencies": {
-    "d10m": "^0.4.2",
+    "d10m": "^0.4.3",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-live": "^1.10.1",
