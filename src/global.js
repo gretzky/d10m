@@ -7,7 +7,7 @@
  */
 import { injectGlobal } from 'styled-components'
 
-injectGlobal`
+const global = injectGlobal`
   ::selection {
     text-shadow: none;
   }
@@ -316,3 +316,5 @@ injectGlobal`
     cursor: default;
   }
 `
+
+export default global

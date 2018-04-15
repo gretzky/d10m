@@ -1683,9 +1683,9 @@ cyclist@~0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-0.2.2.tgz#1b33792e11e914a2fd6d6ed6447464444e5fa640"
 
-d10m@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/d10m/-/d10m-0.4.3.tgz#94cd203271d32d31f9354cc8537d04bc016b1335"
+d10m@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/d10m/-/d10m-0.4.4.tgz#953d6c261d76fa299ca3ad593751ea61ee3f37e5"
   dependencies:
     clean-tag "^1.0.4"
     invariant "^2.2.4"
