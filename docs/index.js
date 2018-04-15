@@ -1,14 +1,15 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-import { ThemeProvider, Wrapper } from 'd10m'
+import { ThemeProvider, Wrapper, Heading } from 'd10m'
+import theme from './theme'
 
 const App = () => (
-  <h1>hello</h1>
+  <Heading color={theme.colors.white}>hello</Heading>
 )
 
 render(
-  <ThemeProvider>
+  <ThemeProvider theme={theme}>
     <Wrapper>
       <App />
     </Wrapper>

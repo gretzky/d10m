@@ -1,4 +1,4 @@
-import Text from './text'
+import Text from './Text'
 import theme from '../theme/theme'
 
 const Heading = Text.withComponent('h3')
