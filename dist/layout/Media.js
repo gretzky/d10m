@@ -103,7 +103,7 @@ Object.defineProperty(Media, "propTypes", {
   writable: true,
   value: {
     defaultMatches: _propTypes.default.bool,
-    query: propTypes.oneOfType([_propTypes.default.string, _propTypes.default.object, _propTypes.default.arrayOf(_propTypes.default.object.isRequired)]).isRequired,
+    query: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.object, _propTypes.default.arrayOf(_propTypes.default.object.isRequired)]).isRequired,
     render: _propTypes.default.func,
     children: _propTypes.default.oneOfType([_propTypes.default.node, _propTypes.default.func]),
     targetWindow: _propTypes.default.object
