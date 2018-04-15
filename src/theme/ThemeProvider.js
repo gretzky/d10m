@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components'
+
+import './global'
 import theme from './theme'
 
 const ThemeProvider = props => (

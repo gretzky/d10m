@@ -1,5 +1,3 @@
-export { default as global } from './global'
-
 export { default as Media } from './layout/Media'
 export { default as Flex } from './layout/Flex'
 export { default as Box } from './layout/Box'

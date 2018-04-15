@@ -5,13 +5,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _text = _interopRequireDefault(require("./text"));
+var _Text = _interopRequireDefault(require("./Text"));
 
 var _theme = _interopRequireDefault(require("../theme/theme"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Heading = _text.default.withComponent('h3');
+var Heading = _Text.default.withComponent('h3');
 
 Heading.displayName = 'Heading';
 Heading.defaultProps = {
