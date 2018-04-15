@@ -1330,6 +1330,14 @@ clean-css@4.1.x:
   dependencies:
     source-map "0.5.x"
 
+clean-tag@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/clean-tag/-/clean-tag-1.0.4.tgz#9b407b306fadce114e6dffa774e7b61bdfc0c190"
+  dependencies:
+    html-tags "^2.0.0"
+    react ">=16.0.0"
+    styled-system ">=1.1 || >=2.0"
+
 cli-cursor@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/cli-cursor/-/cli-cursor-1.0.2.tgz#64da3f7d56a54412e59794bd62dc35295e8f2987"
@@ -1674,6 +1682,17 @@ currently-unhandled@^0.4.1:
 cyclist@~0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-0.2.2.tgz#1b33792e11e914a2fd6d6ed6447464444e5fa640"
+
+d10m@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/d10m/-/d10m-0.2.0.tgz#d9a731b6c258071c6ae3eb41c93fa8a452e9d744"
+  dependencies:
+    clean-tag "^1.0.4"
+    invariant "^2.2.4"
+    json2mq "^0.2.0"
+    react "^16.3.1"
+    react-dom "^16.3.1"
+    styled-components "^3.2.5"
 
 dargs@^5.1.0:
   version "5.1.0"
@@ -2778,6 +2797,10 @@ html-minifier@^3.2.3:
     relateurl "0.2.x"
     uglify-js "3.3.x"
 
+html-tags@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-2.0.0.tgz#10b30a386085f43cede353cc8fa7cb0deeea668b"
+
 html-webpack-plugin@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-3.2.0.tgz#b01abbd723acaaa7b37b6af4492ebda03d9dd37b"
@@ -2973,7 +2996,7 @@ into-stream@^3.1.0:
     from2 "^2.1.1"
     p-is-promise "^1.1.0"
 
-invariant@^2.2.0, invariant@^2.2.2:
+invariant@^2.2.0, invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   dependencies:
@@ -3364,6 +3387,12 @@ json-stable-stringify@^1.0.1:
 json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
+
+json2mq@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/json2mq/-/json2mq-0.2.0.tgz#b637bd3ba9eabe122c83e9720483aeb10d2c904a"
+  dependencies:
+    string-convert "^0.2.0"
 
 json3@^3.3.2:
   version "3.3.2"
@@ -4584,7 +4613,7 @@ react-x-ray@^1.0.0-4:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react@^16.3.1:
+react@>=16.0.0, react@^16.3.1:
   version "16.3.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.3.1.tgz#4a2da433d471251c69b6033ada30e2ed1202cfd8"
   dependencies:
@@ -5296,6 +5325,10 @@ strict-uri-encode@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/strict-uri-encode/-/strict-uri-encode-1.1.0.tgz#279b225df1d582b1f54e65addd4352e18faa0713"
 
+string-convert@^0.2.0:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/string-convert/-/string-convert-0.2.1.tgz#6982cc3049fbb4cd85f8b24568b9d9bf39eeff97"
+
 string-template@~0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/string-template/-/string-template-0.2.1.tgz#42932e598a352d01fc22ec3367d9d84eec6c9add"
@@ -5389,6 +5422,12 @@ styled-components@^3.2.5:
     stylis "^3.5.0"
     stylis-rule-sheet "^0.0.10"
     supports-color "^3.2.3"
+
+"styled-system@>=1.1 || >=2.0":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-2.2.1.tgz#2b0a486917037934dd7451eebe2e7fd5d1a1c58f"
+  dependencies:
+    prop-types "^15.6.0"
 
 stylis-rule-sheet@^0.0.10:
   version "0.0.10"

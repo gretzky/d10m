@@ -6,8 +6,8 @@ import {
   LiveEditor
 } from 'react-live'
 
-import '../src/global'
-import { ThemeProvider, theme, Wrapper, Flex } from '../src'
+import 'd10m/global'
+import { ThemeProvider, theme, Wrapper, Flex } from 'd10m'
 
 const App = () => (
   <LiveProvider code='<strong>hello</strong>'>
