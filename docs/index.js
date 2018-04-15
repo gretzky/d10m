@@ -1,21 +1,10 @@
 import React from 'react'
 import { render } from 'react-dom'
-import {
-  LiveProvider,
-  LivePreview,
-  LiveEditor
-} from 'react-live'
 
-import 'd10m/global'
-import { ThemeProvider, theme, Wrapper, Flex } from 'd10m'
+import { ThemeProvider, theme, Wrapper } from 'd10m'
 
 const App = () => (
-  <LiveProvider code='<strong>hello</strong>'>
-    <Flex>
-      <LiveEditor />
-      <LivePreview />
-    </Flex>
-  </LiveProvider>
+  <h1>hello</h1>
 )
 
 render(

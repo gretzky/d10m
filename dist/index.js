@@ -57,6 +57,12 @@ Object.defineProperty(exports, "Heading", {
     return _Heading.default;
   }
 });
+Object.defineProperty(exports, "global", {
+  enumerable: true,
+  get: function get() {
+    return _global.default;
+  }
+});
 
 var _Media = _interopRequireDefault(require("./layout/Media"));
 
@@ -75,5 +81,7 @@ var _colors = _interopRequireDefault(require("./theme/colors"));
 var _Text = _interopRequireDefault(require("./typography/Text"));
 
 var _Heading = _interopRequireDefault(require("./typography/Heading"));
+
+var _global = _interopRequireDefault(require("./global"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
