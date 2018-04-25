@@ -1,4 +1,4 @@
-items: [],![](./banner.png)
+![](./banner.png)
 
 A baseline style for React apps that use css-in-js. Essentially just a wrapper around [styled-system](https://github.com/jxnblk/styled-system) with some extras.
 
