@@ -17,21 +17,19 @@ yarn add d10m
 It can also be used without css-in-js, if you're just looking for a simple styling implementation.
 
 ```javascript
-import React from 'react'
-import { render } from 'react-dom'
-import { ThemeProvider } from 'd10m'
+import React from "react"
+import { render } from "react-dom"
+import { ThemeProvider } from "d10m"
 
-import './theme'
+import "./theme"
 
-const App = () => (
-  <h1>hello world</h1>
-)
+const App = () => <h1>hello world</h1>
 
 render(
   <ThemeProvider theme={theme}>
     <App />
   </ThemeProvider>,
-  document.getElementById('root')
+  document.getElementById("root")
 )
 ```
 
@@ -51,11 +49,13 @@ Comes with a minimal [default theme](https://github.com/gretzky/d10m/blob/master
 
 `<Media>` - a component for responsivity if necessary. see [react-media](https://github.com/ReactTraining/react-media)
 
-`<Flex>` - a flexbox component
+`<Flex>` - a flexbox component. see [grid-styled](https://github.com/jxnblk/)
 
-`<Box>` - a style-prop ready div
+`<Box>` - a style-prop ready div. see [grid-styled](https://github.com/jxnblk/)
 
 ## Related / Shoutouts
+
+Shoutout [brent jackson](https://github.com/jxnblk)
 
 * [styled-system](https://github.com/jxnblk/styled-system)
 * [grid-styled](https://github.com/jxnblk/grid-styled)
