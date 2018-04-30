@@ -21,7 +21,7 @@ import React from "react"
 import { render } from "react-dom"
 import { ThemeProvider } from "d10m"
 
-import "./theme"
+import theme from "./theme"
 
 const App = () => <h1>hello world</h1>
 

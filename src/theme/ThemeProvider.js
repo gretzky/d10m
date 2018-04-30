@@ -6,10 +6,13 @@ import './global'
 import theme from './defaultTheme'
 
 const ThemeProvider = props => (
-  <StyledThemeProvider theme={theme}>{props.children}</StyledThemeProvider>
+  <StyledThemeProvider theme={props.theme || theme}>
+    {props.children}
+  </StyledThemeProvider>
 )
 
 ThemeProvider.propTypes = {
+  theme: PropTypes.object,
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.func
