@@ -11,7 +11,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _styledSystem = require("styled-system");
 
-var _theme = _interopRequireDefault(require("../theme/theme"));
+var _defaultTheme = _interopRequireDefault(require("../theme/defaultTheme"));
 
 var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"]);
 
@@ -19,17 +19,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var align = (0, _styledSystem.responsiveStyle)('text-align', 'align');
+var align = (0, _styledSystem.responsiveStyle)("text-align", "align");
 
 var Text = _styledComponents.default.div(_templateObject, _styledSystem.fontSize, _styledSystem.space, _styledSystem.color, _styledSystem.fontWeight, align);
 
-Text.displayName = 'Text'; // lol nsa
+Text.displayName = "Text"; // lol nsa
 
 var nsa = _propTypes.default.oneOfType([_propTypes.default.number, _propTypes.default.string, _propTypes.default.array]);
 
 Text.propTypes = {
   fontSize: nsa,
-  align: _propTypes.default.oneOf(['left', 'center', 'right', 'justify']),
+  align: _propTypes.default.oneOf(["left", "center", "right", "justify"]),
   fontWeight: _propTypes.default.number,
   m: nsa,
   mt: nsa,
@@ -47,10 +47,10 @@ Text.propTypes = {
   py: nsa
 };
 Text.defaultProps = {
-  theme: _theme.default
+  theme: _defaultTheme.default
 };
-Text.span = Text.withComponent('span');
-Text.p = Text.withComponent('p');
-Text.s = Text.withComponent('s');
+Text.span = Text.withComponent("span");
+Text.p = Text.withComponent("p");
+Text.s = Text.withComponent("s");
 var _default = Text;
 exports.default = _default;

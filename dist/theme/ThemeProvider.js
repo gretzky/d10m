@@ -19,11 +19,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var ThemeProvider = function ThemeProvider(props) {
   return _react.default.createElement(_styledComponents.ThemeProvider, {
-    theme: _defaultTheme.default
+    theme: props.theme || _defaultTheme.default
   }, props.children);
 };
 
 ThemeProvider.propTypes = {
+  theme: _propTypes.default.object,
   children: _propTypes.default.oneOfType([_propTypes.default.node, _propTypes.default.func])
 };
 var _default = ThemeProvider;

@@ -36,7 +36,7 @@ Object.defineProperty(exports, "ThemeProvider", {
 Object.defineProperty(exports, "theme", {
   enumerable: true,
   get: function get() {
-    return _theme.default;
+    return _defaultTheme.default;
   }
 });
 Object.defineProperty(exports, "Text", {
@@ -51,6 +51,12 @@ Object.defineProperty(exports, "Heading", {
     return _Heading.default;
   }
 });
+Object.defineProperty(exports, "Button", {
+  enumerable: true,
+  get: function get() {
+    return _Button.default;
+  }
+});
 
 var _Media = _interopRequireDefault(require("./layout/Media"));
 
@@ -62,10 +68,12 @@ var _Wrapper = _interopRequireDefault(require("./layout/Wrapper"));
 
 var _ThemeProvider = _interopRequireDefault(require("./theme/ThemeProvider"));
 
-var _theme = _interopRequireDefault(require("./theme/theme"));
+var _defaultTheme = _interopRequireDefault(require("./theme/defaultTheme"));
 
 var _Text = _interopRequireDefault(require("./typography/Text"));
 
 var _Heading = _interopRequireDefault(require("./typography/Heading"));
+
+var _Button = _interopRequireDefault(require("./elements/Button"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

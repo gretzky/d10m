@@ -1,11 +1,10 @@
-const white = '#f00'
+const white = "#f00";
 
 const colors = {
   white
-}
-
+};
 const theme = {
   colors
-}
+};
 
-export default theme
+export default theme;

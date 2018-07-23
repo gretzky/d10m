@@ -1,19 +1,13 @@
 /**
  * https://github.com/jxnblk/grid-styled
  */
-import styled from 'styled-components'
-import {
-  space,
-  width,
-  flex,
-  color,
-  fontSize,
-  order
-} from 'styled-system'
-import tag from 'clean-tag'
-import theme from '../theme/theme'
+import styled from 'styled-components';
+import { space, width, flex, color, fontSize, order } from 'styled-system';
+import tag from 'clean-tag';
+import theme from '../theme/defaultTheme';
 
-const Box = styled(tag)([],
+const Box = styled(tag)(
+  [],
   { boxSizing: 'border-box' },
   width,
   space,
@@ -23,7 +17,7 @@ const Box = styled(tag)([],
   order
 )
 
-Box.displayName = 'Box'
+Box.displayName = 'Box';
 
 Box.defaultProps = {
   theme

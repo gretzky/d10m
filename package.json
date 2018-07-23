@@ -12,7 +12,8 @@
     "compile": "babel src -d dist --ignore __tests__",
     "prepare": "yarn run lint && yarn run compile",
     "precommit": "lint-staged",
-    "lint": "standard src/** --fix"
+    "lint": "standard src/** --fix",
+    "dev": "cd example && yarn start"
   },
   "dependencies": {
     "clean-tag": "^1.0.4",
@@ -21,7 +22,8 @@
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "styled-components": "^3.2.5",
-    "styled-system": "^2.2.1"
+    "styled-system": "^2.2.1",
+    "system-components": "^3.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.44",

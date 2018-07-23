@@ -11,7 +11,7 @@ var _styledSystem = require("styled-system");
 
 var _cleanTag = _interopRequireDefault(require("clean-tag"));
 
-var _theme = _interopRequireDefault(require("../theme/theme"));
+var _defaultTheme = _interopRequireDefault(require("../theme/defaultTheme"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24,7 +24,7 @@ var Box = (0, _styledComponents.default)(_cleanTag.default)([], {
 }, _styledSystem.width, _styledSystem.space, _styledSystem.fontSize, _styledSystem.color, _styledSystem.flex, _styledSystem.order);
 Box.displayName = 'Box';
 Box.defaultProps = {
-  theme: _theme.default
+  theme: _defaultTheme.default
 };
 Box.propTypes = _objectSpread({}, _styledSystem.width.propTypes, _styledSystem.space.propTypes, _styledSystem.fontSize.propTypes, _styledSystem.color.propTypes, _styledSystem.flex.propTypes, _styledSystem.order.propTypes);
 var _default = Box;

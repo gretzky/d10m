@@ -1,9 +1,15 @@
-import styled from 'styled-components'
-import PropTypes from 'prop-types'
-import { fontSize, fontWeight, space, color, responsiveStyle } from 'styled-system'
-import theme from '../theme/theme'
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import {
+  fontSize,
+  fontWeight,
+  space,
+  color,
+  responsiveStyle
+} from "styled-system";
+import theme from "../theme/defaultTheme";
 
-const align = responsiveStyle('text-align', 'align')
+const align = responsiveStyle("text-align", "align");
 
 const Text = styled.div`
   ${fontSize}
@@ -11,25 +17,20 @@ const Text = styled.div`
   ${color}
   ${fontWeight}
   ${align}
-`
+`;
 
-Text.displayName = 'Text'
+Text.displayName = "Text";
 
 // lol nsa
 const nsa = PropTypes.oneOfType([
   PropTypes.number,
   PropTypes.string,
   PropTypes.array
-])
+]);
 
 Text.propTypes = {
   fontSize: nsa,
-  align: PropTypes.oneOf([
-    'left',
-    'center',
-    'right',
-    'justify'
-  ]),
+  align: PropTypes.oneOf(["left", "center", "right", "justify"]),
   fontWeight: PropTypes.number,
   m: nsa,
   mt: nsa,
@@ -45,14 +46,14 @@ Text.propTypes = {
   pl: nsa,
   px: nsa,
   py: nsa
-}
+};
 
 Text.defaultProps = {
   theme: theme
-}
+};
 
-Text.span = Text.withComponent('span')
-Text.p = Text.withComponent('p')
-Text.s = Text.withComponent('s')
+Text.span = Text.withComponent("span");
+Text.p = Text.withComponent("p");
+Text.s = Text.withComponent("s");
 
-export default Text
+export default Text;

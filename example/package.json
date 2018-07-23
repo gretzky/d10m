@@ -9,6 +9,7 @@
   "dependencies": {
     "d10m": "^0.5.3",
     "react": "^16.3.1",
+    "react-a11y": "^1.0.0",
     "react-dom": "^16.3.1",
     "react-live": "^1.10.1",
     "react-x-ray": "^1.0.0-4",
