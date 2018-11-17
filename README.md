@@ -1,18 +1,20 @@
 ![](./banner.png)
 
-A baseline style for React apps that use css-in-js. Essentially just a wrapper around [styled-system](https://github.com/jxnblk/styled-system) with some accessible extras.
+Baseline CSS for any React app. A styled-components wrapper around normalize.css / reset.css as well as a WCAG-compliant theme.
 
 ## Getting Started
 
 Install into any React project.
 
 ```
-yarn add d10m
+yarn add global-reset
 ```
 
 ## Usage
 
-`d10m` includes a global reset as well as normalized components. It also includes a flexible Text component.
+### Global
+
+Import the `Global` component as the first child in your root component.
 
 ```javascript
 import React from "react";
@@ -31,29 +33,18 @@ render(
 );
 ```
 
-### Components
+### Theme
 
-**Global**
+A theme object with WCAG-compliant, a11y colors.
 
-`d10m` comes with a global 'normalizer', which is based off of [reset.css](https://meyerweb.com/eric/tools/css/reset/) and [normalize.css](https://necolas.github.io/normalize.css/)
-
-**Text**
+There are 2 color schemes (light and dark) for usage with the correct background, i.e. `theme.dark.primary` should be used against the black background color.
 
 ```
-import { Text, Heading } from 'd10m'
+import { theme } from 'd10m'
 
-const Test = () => (
-  <div>
-    <Text>some regular text</Text>
-    <Heading.h1>header</Header.h1>
+const Text = () => (
+  <div style={{ backgroundColor: theme.dark.black }}>
+    <p style={{ color: theme.dark.primary }}>hello</p>
   </div>
 )
-```
-
-## Related / Shoutouts
-
-- [styled-system](https://github.com/jxnblk/styled-system)
-
-```
-
 ```
