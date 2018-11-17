@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { StyledText, StyledDfn, StyledA } from "./styles";
-import theme from "../styles/theme";
+import theme from "../../styles/theme";
 
 export const Text = () => (
   <StyledText fontSize={[theme.font.size[0], theme.font.size[1]]} />
