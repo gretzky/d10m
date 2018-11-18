@@ -9,10 +9,9 @@
     "dist/**"
   ],
   "scripts": {
-    "compile": "babel src -d dist",
+    "compile": "tsc",
     "prepare": "yarn run lint && yarn run compile",
-    "precommit": "lint-staged",
-    "lint": "standard src/** --fix"
+    "lint": "tslint --project . --fix"
   },
   "dependencies": {
     "react": "^16.3.1",
@@ -20,16 +19,15 @@
     "styled-system": "^3.1.11"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.5",
-    "@babel/preset-env": "^7.1.5",
-    "@babel/preset-react": "^7.0.0",
-    "standard": "^12.0.1"
+    "@types/styled-components": "^4.1.0",
+    "husky": "^1.1.4",
+    "tslint": "^5.11.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.1.6"
   },
-  "lint-staged": {
-    "*.js": [
-      "prettier --no-semi --single-quote --write",
-      "git add"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
   }
 }
