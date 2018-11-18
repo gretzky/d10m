@@ -1,4 +1,4 @@
-![](./banner.png)
+![](https://raw.githubusercontent.com/gretzky/banners/master/d10m.png)
 
 Baseline CSS for any React app. A styled-components wrapper around normalize.css / reset.css as well as a WCAG-compliant theme.
 
