@@ -10,8 +10,7 @@
   ],
   "scripts": {
     "compile": "tsc",
-    "prepare": "yarn run lint && yarn run compile",
-    "lint": "tslint --project . --fix"
+    "prepare": "yarn run compile"
   },
   "dependencies": {
     "react": "^16.3.1",
